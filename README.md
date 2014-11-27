@@ -27,7 +27,3 @@ And the input must have `ng-model`
 ##Tests
 
 Open the SpecRunner.html in a browser.
-
-Or:
-
-[http://htmlpreview.github.io/?https://raw.github.com/robjames/rjCurrencyMask/master/SpecRunner.html](http://htmlpreview.github.io/?https://raw.github.com/robjames/rjCurrencyMask/master/SpecRunner.html)
