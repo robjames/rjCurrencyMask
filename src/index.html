@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="rjCurrencyMask" xmlns:ng="http://angularjs.org" id="ng-app">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>rjCurrencyMask</title>
+</head>
+<body>
+
+	<form ng-init = "currencyNumber = -1234.56">
+		<input type="text" ng-model="currencyNumber" rj-currency-mask>
+		<pre>{{currencyNumber}}</pre>
+	</form>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<script src="angular-locale_es-es.js"></script>
+	<script type="text/javascript" src="rjCurrencyMask.js"></script>
+
+</body>
+</html>
