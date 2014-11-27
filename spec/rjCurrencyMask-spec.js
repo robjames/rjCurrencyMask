@@ -12,9 +12,12 @@ describe("rjCurrencyMask Module", function() {
 	}));
 
 	describe('US', function(){
-		it("should format numbers to currency strings", function() {
-			element.val(12345).blur();
-			expect(element.val()).toBe('$12,345.00');
+
+		describe("directive", function() {
+			it("should format numbers to currency strings", function() {
+				element.val(12345).blur();
+				expect(element.val()).toBe('$12,345.00');
+			});
 		});
 
 		describe("cleanCurrencyString $filter", function() {
@@ -48,15 +51,22 @@ describe("rjCurrencyMask Module", function() {
 	})
 
 	describe('Spanish', function(){
-		var se = document.createElement('script');
-		se.type = "text/javascript";
-		se.src = 'src/angular-locale_es-es.js';
-		document.getElementsByTagName('head')[0].appendChild(se);
-
-		it("should format numbers to currency strings", function() {
-			element.val(12345).blur();
-			expect(element.val()).toBe('12.345,00 €');
+		it("should load spanish", function(done) {
+			var se = document.createElement('script');
+			se.type = "text/javascript";
+			se.src = 'src/angular-locale_es-es.js';
+			document.getElementsByTagName('head')[0].appendChild(se);
+			se.onload = function() {
+				done();
+			}
 		});
+
+		describe("directive", function() {
+			it("should format numbers to currency strings", function() {
+				element.val(12345).blur();
+				expect(element.val()).toBe('12.345,00 €');
+			});
+		})
 
 		describe("cleanCurrencyString $filter", function() {
 
