@@ -18,7 +18,7 @@ Include the module in your app
 
 `angular.module('MyApp', ['rjCurrencyMask'])`
 
-and then ensure you add the directive to an input field yu want the mask applied to 
+and then ensure you add the directive to an input field you want the mask applied to 
 
 `<input type="text" ng-model="yourModelValue" rj-currency-mask>`
 
