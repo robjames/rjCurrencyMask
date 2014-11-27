@@ -11,6 +11,8 @@ This module uses the AngularJs $locale service to ensure this works across all c
 
 [http://htmlpreview.github.io/?https://raw.github.com/robjames/rjCurrencyMask/master/src/index.html](http://htmlpreview.github.io/?https://raw.github.com/robjames/rjCurrencyMask/master/src/index.html)
 
+Initial value set to a negative and in Spanish formatting.
+
 ##Usage
 Include the module in your app
 
