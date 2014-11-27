@@ -26,6 +26,10 @@ and then ensure you add the directive to an input field you want the mask applie
 
 And the input must have `ng-model`
 
+###i18n and l10n
+
+If you want to use formatting other than the default en-US you need to include the correct *$locale* file, as per : [https://docs.angularjs.org/guide/i18n](https://docs.angularjs.org/guide/i18n)
+
 ##Tests
 
 Open the SpecRunner.html in a browser.
