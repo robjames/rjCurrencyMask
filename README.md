@@ -14,7 +14,7 @@ This module uses the AngularJs $locale service to ensure this works across all c
 Initial value set to a negative and in Spanish formatting.
 
 ##Usage
-Include the module in your app
+Inject the module in your app
 
 `angular.module('MyApp', ['rjCurrencyMask'])`
 
